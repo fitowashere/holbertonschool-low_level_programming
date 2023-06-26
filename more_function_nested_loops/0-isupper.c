@@ -6,11 +6,9 @@
  * Return: result
  */
 
-int _isupper(int c)
-{
-
-	if((c > 64) && (c < 91))
-		return(1);
-	else 
-		return(0);
+int _isupper(int c){
+	if (c < 91 && c > 64)
+		return (1);
+	else
+		return (0);
 }
