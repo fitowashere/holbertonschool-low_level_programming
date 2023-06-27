@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * isupper- gets users input
+ * _isupper- gets users input
  * @c: stores users input in c
  * Return: result
  */
