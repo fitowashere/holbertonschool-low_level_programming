@@ -3,7 +3,6 @@
 /**
  *print_rev- gets users input
  *@s: stores users input
- *Return: results
  */
 
 void print_rev(char *s)
