@@ -24,7 +24,6 @@ void print_rev(char *s)
 				_putchar(tmp[y]);
 				y++;
 				z--;
-
 			}
 		}
 	}
