@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
  *rev_string- gets users input
@@ -9,21 +8,22 @@
 void rev_string(char *s)
 {
 	int x = 0, y = 0, z = 0;
-
 	char tmp[10];
 
 	while (s[x] != '\0')
 	{
 		x++;
 		z++;
+
 		if (s[x] == '\0')
 		{
 			while (z != 0)
 			{
-				tmp[y] = s[z-1];
+				tmp[y] = s[z - 1];
 				_putchar(tmp[y]);
 				y++;
 				z--;
+
 			}
 		}
 	}
