@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * print_numbers- gets user input 
+ * print_numbers- gets user input
  * Return: results
  */
 
 void print_numbers(void)
 {
-int i;
+	int i;
 
-for (i = 0; i < 10; i++)
-{
- _putchar(i + '0');
-}
-_putchar('\n');
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
+	_putchar('\n');
 }
 
