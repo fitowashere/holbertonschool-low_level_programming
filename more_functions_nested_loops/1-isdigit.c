@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isdigi- gets users input
+ * _isdigit- gets users input
  * @c: stores users input
  * Return: returns result
  */
