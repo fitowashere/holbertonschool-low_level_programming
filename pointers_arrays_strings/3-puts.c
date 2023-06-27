@@ -3,12 +3,11 @@
 /**
  *_puts- gets users input
  *@str: stores users input
- *Return: results
  */
 
 void _puts(char *str)
 {
-	int x;
+	int x = 0;
 
 	while (str[x] != '\0')
 	{
