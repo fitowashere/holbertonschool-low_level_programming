@@ -15,7 +15,6 @@ void rev_string(char *s)
 		_putchar(s[x]);
 		x++;
 		z++;
-
 		if (s[x] == '\0')
 		{
 			while (z != 0)
@@ -24,7 +23,6 @@ void rev_string(char *s)
 				_putchar(tmp[y]);
 				y++;
 				z--;
-
 			}
 		}
 	}
