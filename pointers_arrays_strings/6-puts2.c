@@ -3,7 +3,6 @@
 /**
  *puts2- gets users input
  *@str: stores users input
- *Return: results
  */
 
 void puts2(char *str)
@@ -12,7 +11,7 @@ void puts2(char *str)
 
 	while (str[x] != '\0')
 	{
-		if (str[x] % 2 == 0)
+		if (x % 2 == 0)
 		{
 			_putchar(str[x]);
 			x++;
