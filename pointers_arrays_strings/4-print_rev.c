@@ -13,7 +13,6 @@ void print_rev(char *s)
 
 	while (s[x] != '\0')
 	{
-		_putchar(s[x]);
 		x++;
 		z++;
 		if (s[x] == '\0')
