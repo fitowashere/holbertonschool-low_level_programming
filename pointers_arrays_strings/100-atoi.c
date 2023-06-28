@@ -9,10 +9,10 @@
 
 int _atoi(char *s)
 {
-	int a;
-	unsigned int why;
-	int x;
-	int z;
+	int a = 0;
+	unsigned int why = 0;
+	int x = 1;
+	int z = 0;
 
 	while (s[a])
 	{
