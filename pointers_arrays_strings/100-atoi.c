@@ -16,15 +16,15 @@ int _atoi(char *s)
 
 	while (s[a])
 	{
-		if (s[a] > 47 && s[a] < 58)
+		if (a  == 45)
+		{
+			x *= -1;
+		}
+		while (s[a] > 47 && s[a] < 58)
 		{
 			z = 1;
 			why = (why * 10) + (s[a] - '0');
 			a++;
-		}
-		if (x == 45)
-		{
-			x *= -1;
 		}
 		if (z == 1)
 		{
