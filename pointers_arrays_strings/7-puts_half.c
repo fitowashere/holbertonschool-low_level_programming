@@ -14,16 +14,12 @@ void puts_half(char *str)
 	{
 		x++;
 	}
-	y = x-- /2;
-	 while (y > x)
-	 {
-		 
-		if (x-- / 2 == 0)
-		{
-			_putchar(str[x]);
-			x++;
-		}
-	 }
+	y = x-- / 2;
+	while (str[y] != '\0')
+	{
+		_putchar(str[y]);
+		y++;
+	}
 	_putchar('\n');
 
 }
