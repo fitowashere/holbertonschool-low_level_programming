@@ -4,21 +4,25 @@
 /**
  **_strcat- gets users input
  *@dest: stores first input
- *@srv: stores second input
+ *@src: stores second input
  *Return: results
  */
 
 char *_strcat(char *dest, char *src)
 {
 
-  int i = strlen(dest);
+	int i, x;
 
-  for (i = 0; src[i] != '\0'; i++)
-  {
-	  dest[i] = src[i];
-  }
+	for (x = 0 ; dest[x] != '\0'; x++)
+		;
 
-  dest[i + strlen(src)] = '\0';
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[x] = src[i];
+		x++;
+	}
 
-  return (dest);
+	dest[x + i] = '\0';
+
+	return (dest);
 }
