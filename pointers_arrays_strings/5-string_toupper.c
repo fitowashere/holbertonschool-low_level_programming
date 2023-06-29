@@ -2,7 +2,7 @@
 
 /**
  *string_toupper- gets users input
- *@*: strores users input
+ *@t: strores users input
  *Return: results
  */
 
