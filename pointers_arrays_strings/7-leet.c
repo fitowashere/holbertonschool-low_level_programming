@@ -16,7 +16,7 @@ char *leet(char *f)
 	while ( *ptr != '\0')
 	{
 		while (A[i] != '\0')
-		{ 
+		{
 			if (*ptr == A[i])
 			{
 				*ptr = N[i];
@@ -24,7 +24,7 @@ char *leet(char *f)
 			}
 			i++;
 		}
-		ptr++
+		ptr++;
 	}
 	return (f);
 }
