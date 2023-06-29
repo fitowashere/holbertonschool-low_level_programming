@@ -5,6 +5,7 @@
  *@dest: stores first input
  *@src: strores second input
  *@n: stores third input
+ *Return: results
  */
 
 char *_strncat(char *dest, char *src, int n)
