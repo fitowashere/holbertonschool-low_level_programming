@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- **_strncat- gets users inputs
+ *_strncat- gets users inputs
  *@dest: stores first input
  *@src: strores second input
  *@n: stores third input
@@ -16,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	if (n > 0)
 	{
-		for (i = 0; src[i] <= src[n]; i++)
+		for (i = 0; src[i] <= n; i++)
 		{
 			dest[x] = src[i];
 			x++;
