@@ -22,7 +22,7 @@ char *_strcat(char *dest, char *src)
 		x++;
 	}
 
-	dest[x + i] = '\0';
+	dest[x] = '\0';
 
 	return (dest);
 }
