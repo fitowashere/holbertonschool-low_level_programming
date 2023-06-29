@@ -8,21 +8,20 @@
 
 char *leet(char *f)
 {
-	char *A = "AaEeOoTtLl";
-	char *N = "4433007711";
+	char *A = "AEOTL";
+	char *N = "43071";
 	int i = 0;
 	char *ptr = f;
 
-	while ( *ptr != '\0')
+	while (*ptr != '\0')
 	{
-		while (A[i] != '\0')
+		for (i = 0; i < 5; i++)
 		{
-			if (*ptr == A[i])
+			if (*ptr == A[i] || *ptr == A[i] + 32)
 			{
 				*ptr = N[i];
 				break;
 			}
-			i++;
 		}
 		ptr++;
 	}
