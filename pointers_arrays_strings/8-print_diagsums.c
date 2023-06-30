@@ -14,8 +14,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		i1 += a[i*size + 1];
-		i2 += a[i*size + (size -1 - i)];
+		i1 += a[i * size + i];
+		i2 += a[i * size + (size - 1 - i)];
 	}
 	printf("%d, %d\n", i1, i2);
 }
