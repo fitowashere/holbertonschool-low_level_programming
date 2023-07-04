@@ -3,6 +3,7 @@
 /**
  *_print_rev_recursion- gets users input
  *@s: stores input in variable
+ *Return: nothing
  */
 
 void _print_rev_recursion(char *s)
