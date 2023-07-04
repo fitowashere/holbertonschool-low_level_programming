@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *_print_rev_recursion: gets users input
+ *_print_rev_recursion- gets users input
  *@s: stores input in variable
  */
 
@@ -15,6 +14,6 @@ void _print_rev_recursion(char *s)
 	}
 
 	_print_rev_recursion(s + 1);
-	putchar(*s);
+	_putchar(*s);
 
 }
