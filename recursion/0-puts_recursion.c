@@ -1,9 +1,9 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
  *_puts_recursion- gets users input
  *@s: Stores users input.
+ *Return: nothing.
  */
 
 void _puts_recursion(char *s)
