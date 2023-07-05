@@ -13,7 +13,7 @@ int is_prime_number(int n)
 		return (0);
 	}
 
-	return(findprimehelper(n, n / 2));
+	return (findprimehelper(n, n / 2));
 }
 
 /**
@@ -23,17 +23,17 @@ int is_prime_number(int n)
  *Return: results
  */
 
- int findprimehelper(int n, int x)
- {
- if ( x == 1)
- {
- return (1);
- }
+int findprimehelper(int n, int x)
+{
+	if (x == 1)
+	{
+		return (1);
+	}
 
- if (n % x == 0)
- {
- return (0);
- }
+	if (n % x == 0)
+	{
+		return (0);
+	}
 
- return (findprimehelper(n, x-1));
- }
+	return (findprimehelper(n, x - 1));
+}
