@@ -1,0 +1,22 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ *main- gets inputs
+ *@argc: gets first input
+ *@argv: gets string inputs
+ *Return: results
+ */
+
+int main( int argc, char* argv[])
+{
+	int i;
+	if (argc > 1)
+	{
+		for (i = 0; i < argc; i++)
+		{
+			printf("my name is %s\n", argv[i]);
+		}
+	}
+	return (0);
+}
