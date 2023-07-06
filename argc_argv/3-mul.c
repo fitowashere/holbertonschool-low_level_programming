@@ -13,9 +13,9 @@ int main(int argc, char *argv[])
 {
 	int num1, num2, mul;
 
-    if (argc != 3)
+	if (argc != 3)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 
