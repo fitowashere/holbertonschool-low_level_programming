@@ -4,7 +4,7 @@
 /**
  *create_array- gets users input
  *@size: gets first input
- *@c gets second input
+ *@c: gets second input
  *Return: results
  */
 
