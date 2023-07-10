@@ -15,12 +15,12 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	if (array == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	for (ui =  0; ui < size; ui++)
@@ -28,5 +28,5 @@ char *create_array(unsigned int size, char c)
 		array[ui] = c;
 	}
 
-	return array;
+	return (array);
 }
