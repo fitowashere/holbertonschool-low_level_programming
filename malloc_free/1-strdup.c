@@ -13,7 +13,8 @@ char *_strdup(char *str)
 {
 
 	int s = _strlen(str); /* gets the size of str */
-	char *a = malloc((s + 1) * sizeof(char)); /*creats an array with the exact size of str*/
+	char *a = malloc((s + 1) * sizeof(char));
+	/*creats an array with the exact size of str*/
 
 	if (str == NULL) /*checks if str is empty and returns NULL*/
 	{
@@ -21,5 +22,5 @@ char *_strdup(char *str)
 	}
 
 	_strncpy(a, str, s); /*copies the string from one variable to another*/
-		return (a); /*returns the new copies variable*/
+	return (a); /*returns the new copies variable*/
 }
