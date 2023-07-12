@@ -21,6 +21,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	if (a== NULL)
+	{
+		return (NULL);
+	}
 	_strncpy(a, str, s); /*copies the string from one variable to another*/
 	return (a); /*returns the new copies variable*/
 }
