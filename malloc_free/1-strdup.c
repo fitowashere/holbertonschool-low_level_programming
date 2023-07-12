@@ -12,7 +12,7 @@ char *_strdup(char *str)
 {
 
 	char *s = &str[0]; /* gets the size of str */
-	char *a = malloc((s + 1) * sizeof(char));
+	char *a = malloc((strlen(s) + 1) * sizeof(char));
 	/*creats an array with the exact size of str*/
 
 	if (a == NULL) /*checks if str is empty and returns NULL*/
