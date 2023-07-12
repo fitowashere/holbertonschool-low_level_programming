@@ -17,10 +17,10 @@ char *str_concat(char *s1, char *s2)
 	char *first;
 
 	if (s1 == NULL)
-		s1 == "";
+		s1 = "";
 
 	if (s2 == NULL)
-		s2 == "";
+		s2 = "";
 
 	first = malloc(strlen(s1) + strlen(s2) + 1);
 
@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (first[i] == '\0')
 		{
-			for (x = 0 ; s2[x] != '\0'; j++, i++)
+			for (x = 0; s2[x] != '\0'; x++, i++)
 			{
 				first[x] = s2[j];
 			}
