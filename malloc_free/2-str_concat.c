@@ -26,15 +26,8 @@ char *str_concat(char *s1, char *s2)
 
 	if (first == NULL)
 		return (NULL);
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		if (first[i] == '\0')
-		{
-			for (x = 0; s2[x] != '\0'; x++, i++)
-			{
-				first[x] = s2[i];
-			}
-		}
-	}
+	strcpy (first, s1);
+	strcat(result, s2);
+
 	return (first);
 }
