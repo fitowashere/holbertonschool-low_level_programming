@@ -14,26 +14,23 @@ char *str_concat(char *s1, char *s2)
 {
 
 	int i, x;
-	char *first, *second;
-
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+	char *first;
 
 	if (s1 == NULL)
 		s1 == "";
 
 	if (s2 == NULL)
 		s2 == "";
-	first = malloc(strlen(s1) +1);
-	second = malloc(strlen(s2) + 1);
 
-	for (i = 0; first[i] != '\0'; i++)
+	first = malloc(strlen(s1) + strlen(s2) + 1);
+
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		if (first[i] == '\0')
 		{
-			for (x = 0 ; second[x] != '\0'; j++, i++)
+			for (x = 0 ; s2[x] != '\0'; j++, i++)
 			{
-				first[x] = second[j];
+				first[x] = s2[j];
 			}
 		}
 	}
