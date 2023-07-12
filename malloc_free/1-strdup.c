@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
-#include "_strlen.c"
+#include <stdlib.h>"
 #include "string.h"
 
 /**
@@ -12,7 +11,7 @@
 char *_strdup(char *str)
 {
 
-	int s = _strlen(str); /* gets the size of str */
+	char *s = &str[0]; /* gets the size of str */
 	char *a = malloc((s + 1) * sizeof(char));
 	/*creats an array with the exact size of str*/
 
@@ -25,14 +24,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	memcpy(a, str, s); /*copies the string from one variable to another*/
+	memcpy(a, str, strlen(s)); /*copies the string from one variable to another*/
 
 	if (a == NULL) /*checks if str is empty and returns NULL*/
-	{
 		return (NULL);
-	}
 	else
-	{
 		return (a); /*returns the new copies variable*/
-	}
 }
