@@ -11,14 +11,15 @@
 char *_strdup(char *str)
 {
 
-	char *s = &str[0]; /* gets the size of str */
-	char *a = malloc((strlen(s) + 1) * sizeof(char));
-	/*creats an array with the exact size of str*/
+	char *s, *a;
 
-	if (str == NULL) /*checks if str is empty and returns NULL*/
+	if  (str == NULL) /*checks if str is empty and returns NULL*/
 	{
 		return (NULL);
 	}
+	s = &str[0];
+	a = malloc(strlen(s) + 1);
+
 
 	if (a == NULL) /*checks if malloc new string is not null*/
 	{
