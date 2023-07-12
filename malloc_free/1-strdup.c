@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include "_strlen.c"
-#include "_strncpy.c"
 
 /**
  *_strdup- gets users input
@@ -25,7 +24,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	_strncpy(a, str, s); /*copies the string from one variable to another*/
+	memcpy(a, str, s); /*copies the string from one variable to another*/
 
 	if (a == NULL) /*checks if str is empty and returns NULL*/
 	{
