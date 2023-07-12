@@ -16,12 +16,12 @@ char *_strdup(char *str)
 	char *a = malloc((s + 1) * sizeof(char));
 	/*creats an array with the exact size of str*/
 
-	if (str == NULL) /*checks if str is empty and returns NULL*/
+	if (a == NULL) /*checks if str is empty and returns NULL*/
 	{
 		return (NULL);
 	}
 
-	if (a== NULL)
+	if (str == NULL) /*checks if malloc new string is not null*/
 	{
 		return (NULL);
 	}
