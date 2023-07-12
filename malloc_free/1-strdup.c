@@ -31,5 +31,8 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	return (a); /*returns the new copies variable*/
+	else
+	{
+		return (a); /*returns the new copies variable*/
+	}
 }
