@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include "_strlen.c"
+#include "string.h"
 
 /**
  *_strdup- gets users input
