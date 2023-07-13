@@ -15,10 +15,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 	char *array;
 
-	array = (char *)malloc(nmemb * size);
-
 	if (size == 0 || nmemb == 0)
 		return (NULL);
+
+	array = malloc(nmemb * size);
 
 	if (array == NULL)
 		return (NULL);
