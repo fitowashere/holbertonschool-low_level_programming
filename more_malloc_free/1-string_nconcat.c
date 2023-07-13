@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*
+/**
  *string_nconcat- gets user inputs
  *@s1: stores firsrt input
  *@s2: stores second input
@@ -36,6 +36,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s3[i] = s2[x];
 	}
-	s3[i] = '\0';
+
 	return (s3);
 }
