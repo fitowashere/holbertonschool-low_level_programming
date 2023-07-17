@@ -1,7 +1,7 @@
 #ifndef dog_h
 #define dog_h
 /**
- *dog- creats a struck
+ *struct dog- creats a struck
  *@name: gets the name of the dog
  *@age: gets age of the dog
  *@owner: gets the name of the owner
