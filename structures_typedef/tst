@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "enter file name "
+read Filename
+
+echo "enter commit/message"
+read c
+
+git add $Filename
+git commit -m '$c'
+git push
+
