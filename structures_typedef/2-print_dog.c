@@ -15,20 +15,9 @@ if (d == NULL)
 	return;
 }
 
-if (d->name == NULL)
-	printf("name: (nil)\n");
-else if (d->name != NULL)
-	printf("%s\n", d->name);
-
-if (d->age < 0)
-	printf("age: (nil)\n");
-else if (d-> age > 0)
-	printf("%.1f\n", d->age);
-
-if (d->owner == NULL)
-	printf("owner: (nil)\n");
-else if (d->owner != NULL)
-	printf("%s\n", d->owner);
+    printf("Name: %s\n", (d->name != NULL) ? d->name : "(nil)");
+    printf("Age: %1f\n", (d->age > 0) ? d->age : "(nil)");
+    printf("Owner: %s\n", (d->owner != NULL) ? d->owner : "(nil)");
 }
 
 
