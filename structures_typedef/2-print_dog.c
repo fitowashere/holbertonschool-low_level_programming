@@ -5,6 +5,7 @@
 /**
  *print_dog- gets users input
  *@d: stores input
+ *Return: nothing
  */
 
 void print_dog(struct dog *d)
