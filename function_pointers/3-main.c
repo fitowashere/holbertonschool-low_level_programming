@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((atoi(argv[2]) == '/' || atoi(argv[2]) == '%') && num2 == 0)
+	if ((atoi(argv[2]) == atoi("/") || atoi(argv[2]) == atoi("%")) && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
