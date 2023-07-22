@@ -8,7 +8,7 @@
 
 void print_string(const char *separator, const unsigned int n, ...)
 {
-	char a;
+	char *a;
 	unsigned int i;
 	va_list word;
 
@@ -16,7 +16,7 @@ void print_string(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		a = va_arg(word, char);
+		a = va_arg(word, char *);
 
 		if (a == NULL)
 		{
