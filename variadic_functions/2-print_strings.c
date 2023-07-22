@@ -6,7 +6,7 @@
  *@n: stores unsigned int entry
  */
 
-void print_string(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	char *a;
 	unsigned int i;
