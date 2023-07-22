@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- *print_string- gets input
+ *print_strings- gets input
  *@separator: stores char entry
  *@n: stores unsigned int entry
  */
