@@ -15,7 +15,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		num  variadic_function.h = va_arg(num, int);
+		num = va_arg(num, int);
 		printf("%d", num);
 		if (i < n && separator != NULL)
 			printf("%s" separator);
