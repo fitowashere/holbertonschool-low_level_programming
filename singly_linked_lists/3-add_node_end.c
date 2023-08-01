@@ -17,14 +17,6 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	list->str = strdup(str);
 
-	for (i = 0; list->str[i] != '\0'; i++)
-    /*this could be avoided if strlen was permited*/
-	{
-		count++;
-	}
-
-	list->len = count;
-
 	if (str == NULL)
 		return (NULL);
 
@@ -36,6 +28,14 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(list);
 		return (NULL);
 	}
+    	for (i = 0; list->str[i] != '\0'; i++)
+    /*this could be avoided if strlen was permited*/
+	{
+		count++;
+	}
+
+	list->len = count;
+
 	if (*head == NULL)
 		*head = list;
 	else
