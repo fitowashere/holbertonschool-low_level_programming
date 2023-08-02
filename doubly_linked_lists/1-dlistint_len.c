@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
  *dlistint_len- gets input
  *@h: stores input
  *Return: results
