@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index- 
+ * delete_dnodeint_at_index- gets input
  * @head: store input
  * @index: store input
  * Return: results
