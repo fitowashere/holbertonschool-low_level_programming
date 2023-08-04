@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
  *free_dlistint- gets input
  *@head: stores input
  *Return: results
