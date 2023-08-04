@@ -29,7 +29,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
     	for (i = 0; list->str[i] != '\0'; i++)
-    /*this could be avoided if strlen was permited*/
 	{
 		count++;
 	}
