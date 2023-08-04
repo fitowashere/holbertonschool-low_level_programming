@@ -5,11 +5,11 @@
  * @head: store input
  * @index: store input
  * Return: results
-*/
+ */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-    
+
 	dlistint_t *current_node, *prev_node;
 	unsigned int i = 0;
 
@@ -39,6 +39,5 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	free(prev_node->next);
 	prev_node->next = current_node;
 	return (1);
-	return (NULL);
 
 }
