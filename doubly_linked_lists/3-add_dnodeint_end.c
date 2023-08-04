@@ -4,7 +4,7 @@
  *add_dnodeint_end- gets input
  *@head: stores input
  *@n: stores input
- *Result: results
+ *Return: results
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
