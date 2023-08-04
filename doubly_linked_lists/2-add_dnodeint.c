@@ -18,11 +18,12 @@ return (NULL);
 new->n = n;
 new->prev = NULL;
 new->next = *head;
+*head = new;
 
 
 if (*head != NULL)
     (*head)->prev = new;
-    
+
 return (new);
 
 }
