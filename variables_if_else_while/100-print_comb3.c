@@ -4,7 +4,7 @@
 
 /**
  * main - gets input
- * Return: null
+ * Return: results
  */
 
 int main(void)
@@ -15,21 +15,21 @@ int main(void)
 	{
 		for (x = 0; x < 10; x++)
 		{
-			putchar(i + '0');
-			putchar(x + '0');
+			putchar(i + 48);
+			putchar(x + 48);
 
 			if (x < 10)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(44);
+				putchar(32);
 			}
 		}
 	}
 	if (x == 10)
 	{
-		putchar('1' + 0);
-		putchar('0' + 0);
-		putchar('0' + 0);
+		putchar(49);
+		putchar(48);
+		putchar(48);
 		putchar(10);
 	}
 	return (0);
