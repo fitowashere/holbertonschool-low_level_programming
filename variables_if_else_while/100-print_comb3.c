@@ -25,13 +25,11 @@ int main(void)
 			}
 		}
 	}
-	if (x == 10)
-	{
-		putchar(49);
-		putchar(48);
-		putchar(48);
-		putchar(10);
-	}
+	/*if (x == 10)
+	*{
+	*	putchar(49, 48, 48);
+	*}
+    */
 	return (0);
 }
 
