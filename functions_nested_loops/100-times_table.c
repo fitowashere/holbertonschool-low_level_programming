@@ -17,7 +17,11 @@ void print_times_table(int n)
 			for (by = 0; by <= n; by++)
 			{
 				result = by * num;
-				if (result < 10)
+				if (by == 0)
+				{
+					_putchar(result + 48);
+				}
+				else if (result < 10 && by != 0)
 				{
 					_putchar(' ');
 					_putchar(' ');
@@ -39,11 +43,7 @@ void print_times_table(int n)
 					_putchar((result % 10) + 48);
 				}
 				if (by < n)
-				{
 					_putchar(',');
-				}
-
-
 			}
 			_putchar(10);
 		}
