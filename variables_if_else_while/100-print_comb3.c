@@ -13,18 +13,21 @@ int main(void)
 
 	for (i = 0; i < 9; i++)
 	{
-		for (x = 0; x < 10; x++)
+		for (x = i + 1; x < 10; x++)
 		{
-			putchar(i + 48);
-			putchar(x + 48);
-
-			if (i != 8 || x != 9)
+			if (i != x)
 			{
-				putchar(44);
-				putchar(32);
+				putchar(i + 48);
+				putchar(x + 48);
+
+				if (i != 8 || x != 9)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
 	return (0);
-}
 
+}
