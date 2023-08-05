@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		for (x = 0; x < 100; x++)
+		for (x = i + 1; x < 100; x++)
 		{
 			if (i != x)
 			{
