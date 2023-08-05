@@ -30,7 +30,6 @@ list_t *add_node(list_t **head, const char *str)
 	if (size->str == NULL)
 	{
 		free(size->str);
-		free(size->len);
 		free(size);
 		return (NULL);
 	}
