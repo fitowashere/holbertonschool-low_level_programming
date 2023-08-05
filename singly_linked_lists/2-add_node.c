@@ -9,17 +9,9 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	unsigned int count = 0;
-	int i;
-
 	list_t *size = malloc(sizeof(list_t));
 
 	size->str = strdup(str);
-
-	for (i = 0; size->str[i] != '\0'; i++)
-	{
-		count++;
-	}
 
 	if (str == NULL)
 		return (NULL);
@@ -30,9 +22,11 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	if (size->str == NULL)
 	{
+		free(size);
 		return (NULL);
 	}
-	size->len = count;
+
+	size->len = strlen(str);
 	size->next = *head;
 	*head = size;
 
