@@ -23,7 +23,7 @@ int main(void)
 				putchar(x / 10 + 48);
 				putchar(x % 10 + 48);
 
-				if (i != 99 || x != 99)
+				if (i != 98 || x != 99)
 				{
 					putchar(44);
 					putchar(32);
