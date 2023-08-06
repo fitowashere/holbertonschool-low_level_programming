@@ -18,7 +18,9 @@ int main(void)
 		b = temp + b;
 		printf("%.f", b);
 		if (i < 49)
-			printf(", ");
+			printf(",");
+		if (i < 50)
+			printf(" ");
 		i++;
 	}
 	return (0);
