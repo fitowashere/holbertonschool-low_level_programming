@@ -11,13 +11,13 @@ int main(void)
 	double a = 1, b = 2, temp;
 
 	printf("%.f, %.f, ", a, b);
-	while (i < 99)
+	while (i < 98)
 	{
 		temp = a;
 		a = b;
 		b = temp + b;
 		printf("%.f", b);
-		if (i < 99)
+		if (i < 97)
 			printf(", ");
 		i++;
 	}
