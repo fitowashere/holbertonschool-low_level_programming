@@ -7,16 +7,18 @@
 
 int main(void)
 {
-	int i = 0;
+	int i = 2;
 	double a = 1, b = 2, temp;
 
 	printf("%.f, %.f, ", a, b);
-	while (i < 51)
+	while (i < 50)
 	{
 		temp = a;
 		a = b;
 		b = temp + b;
-		printf("%.f, ", b);
+		printf("%.f", b);
+		if (i < 49)
+			printf(", ");
 		i++;
 	}
 	return (0);
