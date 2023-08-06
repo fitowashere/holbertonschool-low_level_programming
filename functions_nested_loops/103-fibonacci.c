@@ -3,21 +3,25 @@
 /**
  * main- gets input
  * Return: results
-*/
+ */
 
 int main(void)
 {
-     int a = 1, b = 2, temp;
-    int sum = 2; /* Start with the initial sum of 2 */
+	int sum = 0;
+	int a = 1, b = 2, temp;
 
-    printf("%d, %d, ", a, b);
+	while (a <= 4000000)
+	{
+		if (a % 2 == 0)
+		{
+			sum += a;
+		}
+		temp = a;
+		a = b;
+		b = temp + b;
+	}
 
-    while (sum + b <= 4000000) {
-        temp = a + b;
-        sum += temp;
-        printf("%d, ", temp);
-        a = b;
-        b = temp;
-    }
-    return (0);
+	printf("%d\n", sum);
+
+	return (0);
 }
