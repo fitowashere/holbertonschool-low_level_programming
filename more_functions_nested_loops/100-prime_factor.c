@@ -4,7 +4,7 @@
 /**
  * main- gets input
  * Return: results
-*/
+ */
 
 int main(void)
 {
