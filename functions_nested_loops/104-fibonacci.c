@@ -16,9 +16,8 @@ int main(void)
 		temp = a;
 		a = b;
 		b = temp + b;
-		printf("%.f", b);
-		if (i < 97)
-			printf(", ");
+		printf(", %.f", b);
+
 		i++;
 	}
 	printf("\n");
