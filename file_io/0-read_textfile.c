@@ -26,6 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	txt[letters + 1] = '\0'; /* ads a null at the end of txt*/
 
 	write(STDOUT_FILENO, txt, ammount);
+	putchar(10);
 	
 	free(txt); /*Frees the allocated memory that was created*/
 	close(Fd); /*closes the open file*/
