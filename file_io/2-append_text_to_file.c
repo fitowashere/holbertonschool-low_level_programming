@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * append_test_to_file- gets input
+ * append_text_to_file- gets input
  * @filename: stores input
  * @text_content: stores input
  * Return: results
